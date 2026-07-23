@@ -110,3 +110,57 @@ footer { background: #09100d; color: rgba(255,255,255,.7); padding: 28px 0; font
   .contact-card { grid-template-columns: 1fr; }
   .info-list div { grid-template-columns: 1fr; gap: 4px; }
 }
+/* Visa information section */
+.visa-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+  align-items: stretch;
+}
+
+.visa-grid .programme-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-width: 0;
+}
+
+.visa-grid .programme-card h3 {
+  margin-top: 12px;
+}
+
+.visa-grid .programme-card p {
+  line-height: 1.7;
+}
+
+.visa-grid .button,
+.visa-grid .text-link {
+  margin-top: auto;
+  align-self: flex-start;
+}
+
+.visa-main-card {
+  grid-column: auto;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+  .visa-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .visa-main-card {
+    grid-column: 1 / -1;
+  }
+}
+
+/* Mobile */
+@media (max-width: 640px) {
+  .visa-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .visa-main-card {
+    grid-column: auto;
+  }
+}
