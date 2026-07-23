@@ -307,3 +307,18 @@ footer { background: #09100d; color: rgba(255,255,255,.7); padding: 28px 0; font
     min-height: 430px;
   }
 }
+.section-heading h2::after {
+  content: "";
+  display: block;
+  width: 92px;
+  height: 5px;
+  margin-top: 18px;
+  border-radius: 999px;
+  background: linear-gradient(
+    90deg,
+    #16823b 0 25%,
+    #f7ce18 25% 50%,
+    #df2027 50% 75%,
+    #111111 75% 100%
+  );
+}
