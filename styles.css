@@ -322,3 +322,36 @@ footer { background: #09100d; color: rgba(255,255,255,.7); padding: 28px 0; font
     #111111 75% 100%
   );
 }
+/* Partner logos */
+
+.hero-logos{
+
+    display:flex;
+
+    gap:35px;
+
+    align-items:center;
+
+    flex-wrap:wrap;
+
+    margin-top:35px;
+
+}
+
+.hero-logos img{
+
+    height:55px;
+
+    width:auto;
+
+    object-fit:contain;
+
+    transition:0.3s ease;
+
+}
+
+.hero-logos img:hover{
+
+    transform:scale(1.05);
+
+}
